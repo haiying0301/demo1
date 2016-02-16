@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拿铁财经送现金礼包活动</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,minimum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta content="email=no" name="format-detection" /> 
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="banner">
+    <img src="img/banner.png" width="100%">
+    <div class="logo">
+      <img src="img/logo.png" width="100%">
+    </div>
+    <div class="monkey">
+      <img class="swing" src="img/monkey.png" width="100%">
+    </div>
+    <div class="date">2月1日-2月21日</div>
+  </div>
+  <div class="text">
+     <div class="textTel">
+       <div class="telInput">
+         <input type="tel" value="请输入手机号码" onfocus="if(value=='请输入手机号码'){this.style.color='#282828';value=''}" onblur="if (value=='') {this.style.color='#004979';value='请输入手机号码'}">
+       </div>
+       <div class="getTel">获取语音验证码</div>
+       <div class="countDown hide"><span>60</span>s</div>
+       <div class="clear"></div>
+     </div>
+     <div class="codeDiv">
+       <input type="text"  value="请输入验证码" onfocus="if(value=='请输入验证码'){this.style.color='#282828';value=''}" onblur="if (value=='') {this.style.color='#004979';value='请输入验证码'}">
+     </div>
+     <div class="unregistered">抱歉，您输入的手机号码未注册“拿铁财经”！</div>
+  </div>
+  <div class="get">
+    <img src="img/get.png" width="100%">
+    <!--loading加载中begin-->
+    <div class="spinner">
+      <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+      <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+      </div>
+    </div>
+    <!--loading加载中end-->
+    <div class="loading hide" style="width:11px;height:11px;margin:10px auto 0;"><img src="img/loading.gif"></div>
+  </div>
+  <div class="ruleDiv">
+    <div class="rule">
+       <div class="ruleTitle">活动规则</div>
+       <div class="ruleText">
+         <p>1.下载并用手机号注册拿铁财经App，即可获取<span>一份微信现金礼包</span><img src="img/bagIcon.png" width="26" height="25">金额最高1888元。</p>
+         <p>2.输入手机号和验证码后即可领取现金礼包。输入的手机号需与您注册拿铁财经时的手机号保持一致。</p>
+         <p>3.因微信现金礼包金额限制，超过200元的红包会以其他方式发放。工作人员会统一在2月22日与您联系确认现金礼包发放事宜，请保持手机畅通。</p>
+         <p>4.每人仅可领取一份现金礼包，以拿铁财经发放记录为准。</p>
+         <p>（同一设备以不同手机号反复注册无效）。</p>
+         <p>5.活动最终解释权归拿铁财经所有。若发现任何异常情况，拿铁财经有权随时采取相应行动或终止该活动。”</p>
+       </div>
+    </div>
+  </div>
+  <div class="footer">
+   <div class="footerImg">
+     <img src="img/footer.png" width="100%">
+   </div>
+   <div class="footerText">活动最终解释权归拿铁财经所有</div>
+  </div>
+</div>
+<!--弹层-->
+<div class="msgBg hide">
+  <div class="msgDiv">
+    <div class="gift">
+      <img src="img/gift.png" width="100%">
+    </div>
+    <div class="msgBox">
+       <div class="close">
+         <div class="closeIcon"></div>
+       </div>
+       <div class="msgAll">
+       <!--文字提示信息一-->
+          <div class="msgText hide">
+             <p>现金礼包已发放，</p>
+             <p>请至微信账户查看！</p>
+          </div>
+          <!--文字提示信息二-->
+          <div class="msgText2">
+            <p> 恭喜您，中了1888元现金礼包，</p>
+            <p>稍后客服采取人工流程发放至您账户，</p>
+            <p>敬请耐心等待！</p>
+          </div>
+          <div class="msgBtn">
+             <div class="btnClose">关闭</div>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+ $(function(){
+  $('.closeIcon').click(function(){
+		$('.msgBg').hide();
+		});	 
+  $('.get').click(function(){
+		$('.msgBg').show();
+		});	
+	$('.btnClose').click(function(){
+		$('.msgBg').hide();
+		});		  
+}) 
+</script>
+</html>
